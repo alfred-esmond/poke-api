@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d1d1d1;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+/* Establece la fuente, color de fondo, color de texto, 
+   margen y padding del body. */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 70px;
+}
+/* El header utiliza flexbox para centrar 
+   su contenido tanto horizontal como verticalmente, 
+   y ajusta los márgenes. */
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+/* La imagen del logo tiene un ancho de 150px, 
+   y la altura es automática para mantener su relación de aspecto. */
+
+.all-pokemon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Se utiliza un diseño de cuadrícula (grid) para mostrar los Pokémon en 
+   3 columnas, con un espacio de 1rem entre ellos. Se limita el ancho máximo 
+   de la cuadrícula a 1200px y se centra horizontalmente en la pantalla. */
+
+.pokemon {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.25);
+  padding-block: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* Asegura que la mitad izquierda tenga el color que asignamos */
+  background: linear-gradient(to left, white 50%, white 50%);
+}
+/* Cada bloque de Pokémon tiene fondo blanco, bordes redondeados, sombra, 
+   padding, texto en mayúsculas y usa flexbox para alinear los elementos. */
+
+.pokemon-img img {
+  max-width: 100%;
+  height: auto;
+  min-width: 8rem;
+}
+/* La imagen dentro de .pokemon-img se ajusta para no exceder el contenedor 
+   (max-width: 100%) y se asegura de que tenga un ancho mínimo de 8rem. */
+
+.back-pokeball img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  max-width: 15rem;
+  opacity: 0.2;
+}
+/* La imagen de la pokébola de fondo se coloca de manera absoluta en el centro, 
+   con un tamaño máximo de 15rem y opacidad baja para crear un efecto visual. */
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  text-align: left;
+  flex-grow: 1;
+}
+/* La información del Pokémon se organiza en una columna, con padding a la 
+   izquierda y derecha. El texto se alinea a la izquierda y el contenedor 
+   crece para ocupar el espacio disponible. */
+
+.pokemon-info p,
+.pokemon-info h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+/* Elimina los márgenes por defecto y ajusta la altura de línea para los párrafos 
+   y títulos dentro de .pokemon-info. */
+
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* Los elementos dentro de .name-container se alinean en una fila, con separación 
+   entre ellos y envueltos si es necesario. El contenido se alinea a la izquierda. */
+
+.pokemon-id {
+  background-color: rgb(165, 165, 165);
+  padding: 0.25rem 0.5rem;
+  border-radius: 100vmax;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+/* El ID del Pokémon tiene un fondo gris, bordes redondeados, padding y un tamaño 
+   de fuente pequeño. */
+
+@media (max-width: 768px) {
+  .all-pokemon {
+    grid-template-columns: 1fr;
+  }
+
+  .pokemon-img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .pokemon-img img {
+    max-width: 8rem;
+  }
+}
+/* En pantallas pequeñas (máximo 768px), la cuadrícula de Pokémon pasa a tener 
+   una sola columna. Las imágenes tienen márgenes laterales y un ancho máximo 
+   de 8rem. */
+
+@media (min-width: 769px) {
+  .pokemon-img {
+    margin-right: 2rem;
+  }
+}
+/* En pantallas grandes (mínimo 769px), se aumenta el margen derecho de las 
+   imágenes de Pokémon para dar más espacio. */
