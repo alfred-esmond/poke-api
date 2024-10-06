@@ -1,62 +1,59 @@
-
-
 .pokemon.electric {
-    background: linear-gradient(to right, #fff4b3 0%, white 100%);
-  }
-  
-  .pokemon.fire {
-    background: linear-gradient(to right, #ffcf9c 0%, white 100%);
-  }
-  
-  .pokemon.grass {
-    background: linear-gradient(to right, #b3e1c8 0%, white 100%);
-  }
-  
-  .pokemon.water {
-    background: linear-gradient(to right, #a3d9eb 0%, white 100%);
-  }
-  
-  .pokemon.fighting {
-    background: linear-gradient(to right, #f1b0b0 0%, white 100%);
-  }
-  
-  .pokemon.psychic {
-    background: linear-gradient(to right, #f7c6d6 0%, white 100%);
-  }
-  
-  .pokemon.bug {
-    background: linear-gradient(to right, #d7f2c2 0%, white 100%);
-  }
-  
-  .pokemon.normal {
-    background: linear-gradient(to right, #e4e4e4 0%, white 100%);
-  }
-  
-  .pokemon.poison {
-    background: linear-gradient(to right, #d0aadf 0%, white 100%);
-  }
-  
-  .pokemon.ground {
-    background: linear-gradient(to right, #dfc9a4 0%, white 100%);
-  }
-  
-  .pokemon.fairy {
-    background: linear-gradient(to right, #f9c2d9 0%, white 100%);
-  }
-  
-  .pokemon.rock {
-    background: linear-gradient(to right, #b3b3b3 0%, white 100%);
-  }
-  
-  .pokemon.ghost {
-    background: linear-gradient(to right, #c6a3c1 0%, white 100%);
-  }
-  
-  .pokemon.dragon {
-    background: linear-gradient(to right, #b3e4f7 0%, white 100%);
-  }
-  
-  .pokemon.ice {
-    background: linear-gradient(to right, #c6e5f0 0%, white 100%);
-  }
-  
+  background: linear-gradient(to right, #fff4b3 0%, white 100%);
+}
+
+.pokemon.fire {
+  background: linear-gradient(to right, #ffcf9c 0%, white 100%);
+}
+
+.pokemon.grass {
+  background: linear-gradient(to right, #b3e1c8 0%, white 100%);
+}
+
+.pokemon.water {
+  background: linear-gradient(to right, #a3d9eb 0%, white 100%);
+}
+
+.pokemon.fighting {
+  background: linear-gradient(to right, #f1b0b0 0%, white 100%);
+}
+
+.pokemon.psychic {
+  background: linear-gradient(to right, #f7c6d6 0%, white 100%);
+}
+
+.pokemon.bug {
+  background: linear-gradient(to right, #d7f2c2 0%, white 100%);
+}
+
+.pokemon.normal {
+  background: linear-gradient(to right, #e4e4e4 0%, white 100%);
+}
+
+.pokemon.poison {
+  background: linear-gradient(to right, #d0aadf 0%, white 100%);
+}
+
+.pokemon.ground {
+  background: linear-gradient(to right, #dfc9a4 0%, white 100%);
+}
+
+.pokemon.fairy {
+  background: linear-gradient(to right, #f9c2d9 0%, white 100%);
+}
+
+.pokemon.rock {
+  background: linear-gradient(to right, #b3b3b3 0%, white 100%);
+}
+
+.pokemon.ghost {
+  background: linear-gradient(to right, #c6a3c1 0%, white 100%);
+}
+
+.pokemon.dragon {
+  background: linear-gradient(to right, #b3e4f7 0%, white 100%);
+}
+
+.pokemon.ice {
+  background: linear-gradient(to right, #c6e5f0 0%, white 100%);
+}
